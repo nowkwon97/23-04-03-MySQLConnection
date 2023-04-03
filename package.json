@@ -1,0 +1,23 @@
+{
+  "name": "23-04-03-mysqlconnection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nowkwon97/23-04-03-MySQLConnection.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nowkwon97/23-04-03-MySQLConnection/issues"
+  },
+  "homepage": "https://github.com/nowkwon97/23-04-03-MySQLConnection#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
