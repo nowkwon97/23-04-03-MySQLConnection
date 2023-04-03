@@ -6,7 +6,7 @@ const fs = require('fs').promises;
 const connection = mysql.createConnection({
   host : 'localhost',
   user : 'root',
-  password : 'cbs8807232^^',
+  password : '비밀번호',
   database : 'user'
 });
 // mysql 연결
@@ -14,13 +14,14 @@ connection.connect();
 
 // 서버 연결 부분
 http.createServer(async (req, res) => {
-  // query를 이용하여 mysql 작업
-  connection.query('SELECT * FROM users', function(error, results, fields) {
-    if(error) {
-      console.log(error);
-    }
-    console.log(results);
-})
+  
+    // query를 이용하여 users테이블 전체 조회
+    connection.query('SELECT * FROM users', function(error, results, fields) {
+      if(error) {
+        console.log(error);
+      }
+      console.log(results);
+  })
   try {
     const data = await fs.readFile('./index.html');
     res.writeHead(200, {'Content-Type' : 'text/html; charset=utf-8'});
