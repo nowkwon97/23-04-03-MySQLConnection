@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/nowkwon97/23-04-03-MySQLConnection#readme",
   "dependencies": {
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "mysql2": "^3.2.0",
+    "nodemon": "^2.0.22"
   }
 }
